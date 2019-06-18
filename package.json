@@ -31,6 +31,7 @@
   ],
   "scripts": {
     "pretest": "npm run lint",
+    "mocha": "mocha debug test/svg-sprite.js",
     "test": "istanbul test node_modules/mocha/bin/_mocha --report html -- test/svg-sprite.js --reporter spec",
     "lint": "jshint bin && jshint lib && jshint test",
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
@@ -48,8 +49,8 @@
     "mkdirp": "^0.5.1",
     "mocha": "^5.2.0",
     "mustache": "^3.0.0",
-    "phantomjs-prebuilt": "^2.1.16",
     "prettysize": "^1.1.0",
+    "puppeteer": "^1.14.0",
     "should": "^13.2.3",
     "svgo": "^1.1.1",
     "vinyl": "^2.2.0",
@@ -69,9 +70,9 @@
     "node-sass": "^4.9.3",
     "pn": "^1.1.0",
     "rimraf": "",
+    "sharp": "^0.22.0",
     "should": "",
     "stylus": "^0.54.5",
-    "svg2png": "github:jkphl/svg2png",
     "vinyl-fs": "^3.0.3"
   },
   "keywords": [
